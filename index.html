@@ -8,52 +8,59 @@
     <title>La Pizza</title>
 </head>
 <body>
-    <header>
-        <img src="image/logo.svg" alt="logo-la-pizza">
+    <header class="header">
+        <img src="image/logo.svg" alt="logo-la-pizza" class="header__image">
     </header>
-    <main>
+    <main class="main">
+        
+        <!-- produtos -->
+
         <section class="produtos">
-            <h2>Mais vendidas</h2>
+            <h2 class="produtos__titulo">Mais vendidas</h2>
             <div class="produtos__item">
-                <img src="image/pizza-1.png" alt="pizza-1">
+                <img src="image/pizza-1.png" alt="pizza-1" class="produtos__image">
                 <span class="material-symbols-outlined" class="produtos__coração">favorite</span>
-                <h3>pizza</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <h4 class="produtos__preço">R$XXXX</h4>
-                <button>COMPRAR AGORA</button>
+                <h3>La Cuma</h3>
+                <p class="produtos__descrição">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <h4 class="produtos__preço">R$29,90</h4>
+                <button class="botão">COMPRAR AGORA</button>
             </div>
             <div class="produtos__item">
-                <img src="image/pizza-2.png" alt="pizza-2">
+                <img src="image/pizza-2.png" alt="pizza-2" class="produtos__image">
                 <span class="material-symbols-outlined" class="produtos__coração">favorite</span>
-                <h3>pizza</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <h4 class="produtos__preço">R$XXXX</h4>
-                <button>COMPRAR AGORA</button>
+                <h3>La Menta</h3>
+                <p class="produtos__descrição">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <h4 class="produtos__preço">R$25,50</h4>
+                <button class="botão">COMPRAR AGORA</button>
             </div>
             <div class="produtos__item">
-                <img src="image/pizza-3.png" alt="pizza-3">
+                <img src="image/pizza-3.png" alt="pizza-3" class="produtos__image">
                 <span class="material-symbols-outlined" class="produtos__coração">favorite</span>
-                <h3>pizza</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <h4 class="produtos__preço">R$XXXX</h4>
-                <button>COMPRAR AGORA</button>
+                <h3>La Cuma</h3>
+                <p class="produtos__descrição">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <h4 class="produtos__preço">R$26,00</h4>
+                <button class="botão">COMPRAR AGORA</button>
             </div>
             <div class="produtos__item">
-                <img src="image/pizza-4.png" alt="pizza-4">
+                <img src="image/pizza-4.png" alt="pizza-4" class="produtos__image">
                 <span class="material-symbols-outlined" class="produtos__coração">favorite</span>
-                <h3>pizza</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <h4 class="produtos__preço">R$XXXX</h4>
-                <button>COMPRAR AGORA</button>
+                <h3>La Toca</h3>
+                <p class="produtos__descrição">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <h4 class="produtos__preço">R$23,80</h4>
+                <button class="botão">COMPRAR AGORA</button>
             </div>
         </section>
+
+        <!-- info -->
+
         <section class="info">
-            <img src="image/image-2.png" alt="">
-            <h2>Sobre a La Pizza</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis mollitia, minima deleniti, voluptates molestias iusto, ex expedita et veritatis ratione fuga incidunt amet nesciunt at eveniet possimus. Iusto, consequatur eos!</p>
+            <div class="info__image"></div>
+            <h2 class="info__título">Sobre a La P<span class="info__título--letra1">i</span><span class="info__título--letra2">z</span><span class="info__título--letra3">z</span>a</h2>
+            <p class="info__texto">Bem-vindo ao "La Pizza", o seu refúgio acolhedor para uma experiência de pizzaria autêntica. Em nosso pequeno oásis italiano, cada pedaço de pizza é uma obra-prima artesanal. Sinta-se em casa enquanto o aroma sedutor de massa fresca assa no forno, criando as pizzas mais deliciosas da cidade.</p>
+            <button class="botão" id="info__botão">LER MAIS SOBRE</button>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <small>Site por <strong>Samuel Silva</strong> - 2025</small>
     </footer>
 </body>

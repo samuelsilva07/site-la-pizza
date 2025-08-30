@@ -1,7 +1,17 @@
+@charset "UTF-8";
+
+/* fontes */
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+/* variáveis */
 
 :root {
   --brand-color: #ffbd48;
+
+  --brand-color-border: #ffbc4848;
+
+  --brand-color-background: #ffbc480b;
 
   --dark: #2e2e2e;
 
@@ -10,8 +20,137 @@
   --white: #ffffff;
 }
 
+/* configurações gerais */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body, html {
   height: 98vh;
   width: 97vw;
   font-family: "Inter", sans-serif;
+}
+
+/* header */
+
+.header {
+  background: black url(../image/image-1.png) center bottom no-repeat scroll;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+}
+
+.header__image {
+  height: 250px;
+  padding: 3em;
+}
+
+/* main - configurações gerais */
+
+.main {
+}
+
+.produtos, .info {
+  padding: 1em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.botão {
+  background-color: var(--brand-color);
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  padding: 10px 2.6em;
+  width: 200px;
+  margin: auto;
+  cursor: pointer;
+}
+
+  /* produtos */
+
+
+.produtos__titulo {
+  text-align: center;
+  margin: 0.5em;
+}
+
+.produtos__item {
+  background-color: var(--brand-color-background);
+  border: 1px solid var(--brand-color-border);
+  border-radius: 10px;
+  margin: 2em;
+  padding: 0 2em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between; 
+  align-items: center;
+  gap: 1em;
+  width: 400px;
+}
+
+.produtos__image {
+  width: 150px;
+}
+
+.produtos__coração {
+  cursor: pointer;
+}
+
+.produtos__descrição {
+  text-align: center;
+  width: 220px;
+}
+
+.produtos__preço {
+  font-size: 1.5em;
+}
+
+  /* info */
+
+.info {
+  background-color: var(--gray);
+}
+
+.info__image {
+  margin: 1em auto;
+  width: 300px;
+  height: 400px;
+  background: black url(../image/image-2.png) center top no-repeat fixed;
+  background-size: contain;
+}
+
+.info__título {
+  margin: 1em;
+}
+
+.info__título--letra1 {
+  color: var(--brand-color);
+}
+.info__título--letra2 {
+  color: red;
+}
+.info__título--letra3 {
+  color: green;
+}
+
+.info__texto {
+  margin: 0.5em;
+}
+
+#info__botão {
+  margin: 2em 0;
+}
+
+/* footer */
+
+.footer {
+  color: white;
+  text-align: center;
+  background-color: var(--brand-color);
+  padding: 5px;
 }
