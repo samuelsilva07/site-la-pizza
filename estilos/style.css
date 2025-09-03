@@ -28,9 +28,9 @@
   box-sizing: border-box;
 }
 
-body, html {
-  height: 98vh;
-  width: 97vw;
+body {
+  height: 100vh;
+  width: 100vw;
   font-family: "Inter", sans-serif;
 }
 
@@ -50,14 +50,10 @@ body, html {
 
 /* main - configurações gerais */
 
-.main {
-}
+.main {}
 
 .produtos, .info {
   padding: 1em;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
 }
 
 .botão {
@@ -71,7 +67,7 @@ body, html {
   cursor: pointer;
 }
 
-  /* produtos */
+/* produtos */
 
 
 .produtos__titulo {
@@ -79,15 +75,22 @@ body, html {
   margin: 0.5em;
 }
 
-.produtos__item {
+.produtos__itens {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 4em;
+  margin: 1em 0; 
+}
+
+.produtos__pizza {
   background-color: var(--brand-color-background);
   border: 1px solid var(--brand-color-border);
   border-radius: 10px;
-  margin: 2em auto;
   padding: 0 2em;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
   gap: 1em;
   width: 400px;
@@ -110,7 +113,7 @@ body, html {
   font-size: 1.5em;
 }
 
-  /* info */
+/* info */
 
 .info {
   background-color: var(--gray);
@@ -125,21 +128,23 @@ body, html {
 }
 
 .info__título {
-  margin: 1em;
+  margin: 1em 0;
 }
 
 .info__título--letra1 {
   color: var(--brand-color);
 }
+
 .info__título--letra2 {
   color: red;
 }
+
 .info__título--letra3 {
   color: green;
 }
 
 .info__texto {
-  margin: 0.5em;
+  margin: 0.5em 0;
 }
 
 #info__botão {
