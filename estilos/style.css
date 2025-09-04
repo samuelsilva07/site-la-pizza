@@ -30,7 +30,7 @@
 
 body {
   height: 100vh;
-  width: 100vw;
+  width: 99vw;
   font-family: "Inter", sans-serif;
 }
 
@@ -72,14 +72,16 @@ body {
 
 .produtos__titulo {
   text-align: center;
-  margin: 0.5em;
+  font-size: 1.7em;
+  margin: 0.5em 0 1em;
 }
 
-.produtos__itens {
+.produtos__itens { /* configurações do layout dos produtos na tela */
   display: flex;
   flex-flow: row wrap;
+  flex-basis: 330px;
   justify-content: center;
-  gap: 4em;
+  gap: 4em 5%;
   margin: 1em 0; 
 }
 
@@ -87,13 +89,15 @@ body {
   background-color: var(--brand-color-background);
   border: 1px solid var(--brand-color-border);
   border-radius: 10px;
-  padding: 0 2em;
+  padding: 0.5em 2em;
+
+  /* configurações das informações de cada produto */
+
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: center;
   gap: 1em;
-  width: 400px;
 }
 
 .produtos__image {
