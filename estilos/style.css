@@ -70,6 +70,7 @@ body {
 .botão:hover {
   color: white;
   box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.497);
+  transform: scale(1.05);
   transition: all 0.2s ease;
 }
 
@@ -110,8 +111,13 @@ body {
   width: 150px;
 }
 
-.produtos__coração {
+.material-symbols-outlined {
   cursor: pointer;
+}
+.material-symbols-outlined:hover {
+  color: red;
+  transform: scale(1.2);
+  transition: all 0.2s ease;
 }
 
 .produtos__descrição {
